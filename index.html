@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Landing Page</title>
+</head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 800px) {
+    #header-img {
+      display: none;
+    }
+    #header p{
+      width: 250px;
+    }
+    #price {
+      display: flex;
+      flex-direction: column;
+    }
+    #price div {
+      margin-top: 20px;
+      
+    }
+  }
+</style>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header id="header"><p><img id="header-img"src="https://as2.ftcdn.net/jpg/00/83/70/73/500_F_83707339_kk0x1pQCoLivui5yPIpcxeBak39clUmM.jpg" alt="trombone">Original Trombones</p> 
+    <nav id="nav-bar">
+      <a href="#presentation" class="nav-link">Features</a>
+      <a href="#video" class="nav-link">How It Work</a>
+      <a href="#price" class="nav-link">Pricing</a>
+  </nav></header>
+  <main class="main">
+    <section class="emails">
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input id="email" type="email" name="email" placeholder="Enter your email address">
+        <input type="submit" value="GET STARTED" id="submit">
+      </form>
+    </section>
+    <section id="presentation">
+    <article class="test"><img class="presentation__image--1"src="./images/flamme2.png" alt="image de presentation" ><div><h1>Prenium Materials</h1><p>Our trombones use the shienest brass wich is sourced locally. This will increase the longevity of your purchase</p></div></article>
+    <article><img class="presentation__image--2" src="./images/camion.png" alt="image de presentation"><div><h1>Fast Shipping</h1><p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied</p></div></article>
+    <article><img class="presentation__image--3" src="./images/batterie.png" alt="image de presentation"><div><h1>Quality Assurance</h1><p>For every purchase you make, we will ensure there are not damage or faults and we will check and test the pitch of your instrument</p></div></article></section>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="price">
+      <div>
+        <h1>TENOR TROMBONE</h1>
+        <h2>$600</h2>
+        <p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+      <div>
+        <h1>BASS TROMBONE</h1>
+          <h2>$900</h2>
+          <p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+      <div>
+        <h1>VALVE TROMBONE</h1>
+        <h2>$1200</h2>
+        <p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+        <button>SELECT</button>
+      </div>
+    </section>
+  </main>
+  <footer><div><h3>Privacy</h3>Copyright 2016, Original Trombones</div></footer>
+  
+</body>
+</html>
